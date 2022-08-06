@@ -10,36 +10,43 @@
   <body>
     <h1 class="text-center my-3">Go wherever you imagine to be!</h1>
 
-    
-    <header class="container">
-      <ul class="nav nav-tabs justify-content-center p-2" id="navId" role="tablist">
-        <li class="nav-item px-2" role="presentation">
-          <button  type="button" id="toronto" class="btn btn-danger">Toronto Street View</button>
-        </li>
-        <li class="nav-item px-2" role="presentation">
-          <button  type="button" id="vanc" class="btn btn-danger">Vancouver Harbour View</button>
-        </li>
-        <li class="nav-item px-2" role="presentation">
-          <button type="button" id="calg" class="btn btn-danger">Calgary Park View</button>
-        </li>
-        <li class="nav-item px-2" role="presentation">
-          <button type="button" id="times" class="btn btn-danger">Times Square</button>
-        </li>
-        <li class="nav-item px-2" role="presentation">
-          <button type="button" id="vegas" class="btn btn-danger">Las Vegas</button>
-        </li>
-        <li class="nav-item px-2" role="presentation">
-          <button type="button" id="venice" class="btn btn-danger">Venice</button>
-        </li>
-      </ul>
-    </header>     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse my-auto" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-2 text-center justify-content-center">
+            <li class="nav-item px-2">
+              <button  type="button" id="toronto" class="btn btn-danger">Toronto Street View</button>
+            </li>
+            <li class="nav-item px-2">
+              <button  type="button" id="vanc" class="btn btn-danger">Vancouver Harbour View</button>
+            </li>
+            <li class="nav-item px-2">
+              <button type="button" id="calg" class="btn btn-danger">Calgary Park View</button>
+            </li>
+            <li class="nav-item px-2">
+              <button type="button" id="times" class="btn btn-danger">Times Square</button>
+            </li>
+            <li class="nav-item px-2">
+              <button type="button" id="vegas" class="btn btn-danger">Las Vegas</button>
+            </li>
+            <li class="nav-item px-2">
+              <button type="button" id="venice" class="btn btn-danger">Venice</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
     
     <div class="container d-flex">
-      <div id="player"></div>
+      <div class="modal-fullscreen-sm-down" id="player"></div>
     </div>
     
     <div class="scroll-left mt-5">
-      <p>This app is for these who's not able to be somewhere but wants to be there. Even if you're phisically limited to the space, your mind and your imagination is beyond these limits. Click any button to start dreaming.</p>
+      <marquee>This app is for these who's not able to be somewhere but wants to be there. Even if you're phisically limited to the space, your mind and your imagination is beyond these limits. Click any button to start dreaming.</marquee>
     </div>
       
       <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->

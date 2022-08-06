@@ -11,7 +11,7 @@
     color: black;
 }
 
-.scroll-left p {
+.scroll-left marquee {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -28,6 +28,16 @@
     -webkit-animation: scroll-left 30s linear infinite;
     animation: scroll-left 30s linear infinite;
 }
+
+@media screen and (min-width: 576px) {
+    .scroll-left marquee {
+        transform: translateX(100%);
+        -moz-animation: scroll-left 10s linear infinite;
+        -webkit-animation: scroll-left 10s linear infinite;
+        animation: scroll-left 10s linear infinite;
+    }
+}
+
 
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
